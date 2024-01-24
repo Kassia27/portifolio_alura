@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:#000;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+.cabecalho{
+    padding: 4% 0% 0% 19%;
+}
+.cabecalho_menu{
+    display: flex;
+    gap: 60px;
+}
+.cabecalho_menu_links{
+    color: #1E90FF;
+    font-size: 1.5rem;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+.cabecalho_menu_links:hover{
+    color: #fff;
+}
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 92px;
+}
+.apresentacao_conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao_conteudo h1{
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+}
+.strong {
+    color: #1E90FF;
+}
+.apresentacao_conteudo p {
+    font-size: 1.5rem;
+    font-family: 'Krona One', sans-serif;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao_links_subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.link_botao {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 50%;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid #1E90FF;
+    text-align: center;
+}
+.link_botao:hover{
+    background-color: #1E90FF;
+}
+.minha_foto{
+    width: 40%;
+    border-radius: 500px;
+    border: 8px solid #1E90FF ;
+}
+footer{
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #1E90FF;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    font-family: 'Krona One', sans-serif;
+}
+@media (max-width:1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 9%;
+    }
+    .apresentacao_conteudo{
+        width: auto;
+    }
+    .cabecalho_menu{
+        justify-content: center;
+    }
+    .botao{
+        margin-bottom: 15%;
+    }
+}
